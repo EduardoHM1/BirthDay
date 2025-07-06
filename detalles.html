@@ -26,9 +26,9 @@
 
 <script>
   function confirmarAsistencia() {
-    const nombre = prompt("Ingresa tu nombre para confirmar tu asistencia:");
-    if (nombre) {
-      const url = "https://docs.google.com/forms/d/e/1FAIpQLSdHTg1PqBlGP41LB-B0L5e4eLxQ1CH-i5k_ZzwdVhyGBVTS5A/viewform?usp=pp_url&entry.941064867=" + encodeURIComponent(nombre);
+    const Nombre = prompt("Ingresa tu nombre para confirmar tu asistencia:");
+    if (Nombre) {
+      const url = "<iframe src=\"https://docs.google.com/forms/d/e/1FAIpQLSdHTg1PqBlGP41LB-B0L5e4eLxQ1CH-i5k_ZzwdVhyGBVTS5A/viewform?embedded=true\" width=\"640\" height=\"418\" frameborder=\"0\" marginheight=\"0\" marginwidth=\"0\">Cargando…</iframe>=" + encodeURIComponent(Nombre);
       window.open(url, "_blank"); // Abre el formulario en una nueva pestaña
     } else {
       alert("No se ingresó ningún nombre.");
