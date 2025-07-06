@@ -55,6 +55,17 @@ body {
   transform:  rotate(0deg)  scale(0.8);
   animation: fadescaleIn 1s ease forwards;
 }
+@keyframes fadescaleIn {
+  0% {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+  }
+}
+
 .stickers2 {
   position:absolute;
   bottom: -35px;
@@ -69,6 +80,17 @@ body {
   transform: rotate(0deg) scale(0.8);
   animation: fadescaleIn 1s ease forwards;
 }
+@keyframes fadescaleIn {
+  0% {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+  }
+}
+
 
 .flores-izquierda {
   position: absolute;
