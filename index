@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Invitación 15 Años</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="invitacion">
+    <div class="flores-izquierda"></div>
+    <div class="flores-derecha-abajo"></div>
+    <h1 class="numero">20</h1>
+    <h2 class="nombre">Anett Ordaz</h2>
+    <div class="info">
+  <div class="info-row">
+    <span class="dia">VIERNES</span>
+    <span class="numero">18</span>
+    <span class="hora">7:00pm</span>
+  </div>
+  <div class="fecha">JUNIO</div>
+  <div class="direccion">Francisco I. Madero 4, Vistha</div>
+  <div class="confirmacion">
+    Confirmar Asistencia<br />
+  </div>
+</div>
+    <button onclick="verDetalles()">Ver mas</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
