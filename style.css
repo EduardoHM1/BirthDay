@@ -14,7 +14,7 @@ body {
   position: relative;
   z-index: 1;
   width: 90vw;
-  aspect-ratio: 10 / 14;
+  aspect-ratio: 8 / 13;
   max-height: 1000px;
   max-width: 600px;
   padding: 2rem;
@@ -250,7 +250,7 @@ button {
   margin: 2rem auto 0;
   display: inline-block;
   padding: 0.5rem 1.5rem;
-  background-color: #9b4c3e;
+  background-color: #7d4b43;
   border: none;
   color: white;
   font-size: 0.9rem;
@@ -278,7 +278,7 @@ button::before {
 }
 
 button:hover {
-  background-color: #9b4c3e;
+  background-color: #7d4b43;
   transform: scale(1.05);
   box-shadow: 0 6px 14px rgba(50, 50, 50, 0.7);
 }
@@ -307,7 +307,7 @@ button:hover::before {
   position: relative;
   z-index: 1;
   width: 90vw;
-  aspect-ratio: 9 / 13;
+  aspect-ratio: 8 / 13;
   max-height: 1000px;
   max-width: 600px;
   padding: 2rem;
@@ -512,12 +512,12 @@ Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   box-shadow: 0 4px 8px rgba(72, 71, 71, 0.4);
   transition: background-color 0.3s ease;
   color: white;
-  background-color: #9b4c3e;
+  background-color: #333;
   min-width: 80px;
 }
 
 #modalInput button:hover {
-  background-color: #553131;
+  background-color: #464646;
 }
 
 /* ANIMACIÓN CON REBOTE SUAVE */
