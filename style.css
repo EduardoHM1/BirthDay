@@ -12,6 +12,7 @@ body {
 
 .invitacion {
   position: relative;
+  z-index: 1;
   width: 90vw;
   aspect-ratio: 9 / 13;
   max-height: 1000px;
@@ -254,6 +255,7 @@ button:hover::before {
 /* Detalles del evento */
 .detalles {
   position: relative;
+  z-index: 1;
   width: 90vw;
   aspect-ratio: 9 / 13;
   max-height: 1000px;
