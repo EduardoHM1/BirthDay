@@ -396,7 +396,7 @@ button:hover::before {
     opacity: 0.6;
   }
 }
-/*VENTANA EMERGENTE*/
+/* VENTANA EMERGENTE */
 #modalAlert {
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
@@ -409,14 +409,15 @@ button:hover::before {
 
 .modal-content {
   background: #f8f6f6;
-  border-radius: 12px;
-  padding: 2rem;
-  max-width: 300px;
+  border-radius: 28px;
+  padding: 1.2rem 1rem;
+  max-width: 240px;
+  width: 90%;
   text-align: center;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
   font-family: 'Dancing Script', cursive;
   color: #7d4b43;
-  font-size: 1.2rem;
+  font-size: 1.05rem;
   animation: fadeScaleIn 0.3s ease forwards;
   outline: none;
 }
@@ -439,20 +440,11 @@ button:hover::before {
   background-color: #7d3b32;
 }
 
-@keyframes fadeScaleIn {
-  from {
-    opacity: 0;
-    transform: scale(0.8);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
+/* MODAL CON INPUT */
 #modalInput {
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0, 0, 0, 0.4);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -461,24 +453,24 @@ button:hover::before {
 
 #modalInput .modal-content {
   background: #f8f6f6;
-  border-radius: 12px;
-  padding: 2rem;
-  max-width: 320px;
+  border-radius: 18px;
+  padding: 1.2rem 1rem;
+  max-width: 240px;
   width: 90%;
   text-align: center;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
   font-family: 'Dancing Script', cursive;
   color: #7d4b43;
-  font-size: 1.2rem;
+  font-size: 1.05rem;
   animation: fadeScaleIn 0.3s ease forwards;
   outline: none;
 }
 
 #modalInput input[type="text"] {
   width: 90%;
-  padding: 0.5rem 1rem;
+  padding: 0.4rem 0.8rem;
   font-size: 1rem;
-  border-radius: 8px;
+  border-radius: 10px;
   border: 1px solid #9b4c3e;
   margin-top: 1rem;
   font-family: 'Dancing Script', cursive;
@@ -491,14 +483,14 @@ button:hover::before {
 }
 
 #modalInput .buttons {
-  margin-top: 1.5rem;
+  margin-top: 1.3rem;
   display: flex;
   justify-content: center;
   gap: 1rem;
 }
 
 #modalInput button {
-  padding: 0.5rem 1.5rem;
+  padding: 0.45rem 1.3rem;
   border-radius: 15px;
   border: none;
   cursor: pointer;
@@ -515,14 +507,14 @@ button:hover::before {
   background-color: #7d3b32;
 }
 
+/* ANIMACIÓN DE ENTRADA */
 @keyframes fadeScaleIn {
   from {
     opacity: 0;
-    transform: scale(0.8);
+    transform: scale(0.85);
   }
   to {
     opacity: 1;
     transform: scale(1);
   }
 }
-
