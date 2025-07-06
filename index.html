@@ -9,12 +9,11 @@
 </head>
 
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-
 <script>
   function lanzarConfeti() {
     const duration = 2 * 1000;
     const animationEnd = Date.now() + duration;
-    const defaults = { startVelocity: 20, spread: 360, ticks: 600, zIndex: 1000 };
+    const defaults = { startVelocity: 20, spread: 560, ticks: 900, zIndex: 1500 };
 
     function randomInRange(min, max) {
       return Math.random() * (max - min) + min;
