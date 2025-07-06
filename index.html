@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-12" />
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BirthDay</title>
-  <link rel="stylesheet" href="style.css?v=2.1.9"/>
+  <link rel="stylesheet" href="style.css?v=2.2.0"/>
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet" />
 </head>
 
@@ -48,19 +48,27 @@
     <h1 class="numero">20</h1>
     <h2 class="nombre">Anette Ordaz</h2>
     <div class="info">
-  <div class="info-row">
-    <span class="dia">VIERNES</span>
-    <span class="numero">18</span>
-    <span class="hora">6:00pm</span>
+      <div class="info-row">
+        <span class="dia">VIERNES</span>
+        <span class="numero">18</span>
+        <span class="hora">6:00pm</span>
+      </div>
+      <div class="fecha">JULIO</div>
+      <div class="direccion">Francisco I. Madero 4, Vistha</div>
+      <div class="confirmacion">
+        Confirmar Asistencia<br />
+        <button onclick="mostrarAlerta()">Ver mas</button>
+      </div>
+    </div>
   </div>
-  <div class="fecha">JULIO</div>
-  <div class="direccion">Francisco I. Madero 4, Vistha</div>
-  <div class="confirmacion">
-    Confirmar Asistencia<br />
+
+<div id="modalAlerta" class="modal-ios-style">
+  <div class="modal-content-ios">
+    <p>Esta es una fiesta sorpresa. Por favor, mantén discreción.</p>
+    <button id="btnEntendido">Entendido</button>
   </div>
 </div>
-    <button onclick="verDetalles()">Ver mas</button>
-  </div>
-  <script src="script.js?v=2.1.6"></script>
+
+  <script src="script.js?v=2.1.7"></script>
 </body>
 </html>
