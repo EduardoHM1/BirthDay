@@ -28,16 +28,13 @@
   function confirmarAsistencia() {
     const nombre = prompt("Ingresa tu nombre para confirmar tu asistencia:");
     if (nombre) {
-      const baseURL = "https://docs.google.com/forms/d/e/1FAIpQLSdHTg1PqBlGP41LB-B0L5e4eLxQ1CH-i5k_ZzwdVhyGBVTS5A/viewform";
-      const param = "?usp=pp_url&entry.941064867=" + encodeURIComponent(nombre);
-      const finalURL = baseURL + param;
-      window.open(finalURL, "_blank"); // Abre en nueva pestaña
+      const url = "https://docs.google.com/forms/d/e/1FAIpQLSdHTg1PqBlGP41LB-B0L5e4eLxQ1CH-i5k_ZzwdVhyGBVTS5A/viewform?usp=pp_url&entry.941064867=" + encodeURIComponent(nombre);
+      window.location.href = url;
     } else {
       alert("No se ingresó ningún nombre.");
     }
   }
 </script>
-
 
 </body>
 </html>
