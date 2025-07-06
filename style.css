@@ -250,7 +250,7 @@ button {
   margin: 2rem auto 0;
   display: inline-block;
   padding: 0.5rem 1.5rem;
-  background-color: #8f584e;
+  background-color: #9b4c3e;
   border: none;
   color: white;
   font-size: 0.9rem;
@@ -259,7 +259,7 @@ button {
   position: relative;
   overflow: hidden;
   transition: background-color 0.3s ease, transform 0.3s ease;
-  box-shadow: 0 4px 8px rgba(143, 88, 78, 0.4);
+  box-shadow: 0 4px 8px rgba(37, 37, 37, 0.4);
   min-width: 8em;
   min-height: 2.8em;
 }
@@ -278,9 +278,9 @@ button::before {
 }
 
 button:hover {
-  background-color: #7d3b32;
+  background-color: #9b4c3e;
   transform: scale(1.05);
-  box-shadow: 0 6px 14px rgba(125, 59, 50, 0.7);
+  box-shadow: 0 6px 14px rgba(50, 50, 50, 0.7);
 }
 
 button:hover::before {
@@ -416,8 +416,9 @@ button:hover::before {
   width: 90%;
   text-align: center;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-  font-family: 'Dancing Script', cursive;
-  color: #7d4b43;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  color: #333;
   font-size: 1.05rem;
   animation: fadeScaleBounce 0.4s ease forwards;
   outline: none;
@@ -431,17 +432,17 @@ button:hover::before {
   padding: 0.4rem 1.2rem;
   border-radius: 14px;
   border: none;
-  background-color: #8f584e;
+  background-color: #333;
   color: white;
   font-family: 'Dancing Script', cursive;
   cursor: pointer;
   font-size: 1rem;
-  box-shadow: 0 4px 8px rgba(143, 88, 78, 0.4);
+  box-shadow: 0 4px 8px rgba(69, 69, 69, 0.4);
   transition: background-color 0.3s ease;
 }
 
 .modal-content button:hover {
-  background-color: #7d3b32;
+  background-color: #333;
 }
 
 /* MODAL CON INPUT */
@@ -449,11 +450,13 @@ button:hover::before {
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
   background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px); /* ← ESTA LÍNEA ES CLAVE */
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 9999;
 }
+
 
 #modalInput .modal-content {
   background: #f8f6f6;
@@ -464,8 +467,9 @@ button:hover::before {
   width: 90%;
   text-align: center;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-  font-family: 'Dancing Script', cursive;
-  color: #7d4b43;
+  color: #333;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-size: 1.05rem;
   animation: fadeScaleBounce 0.4s ease forwards;
   outline: none;
@@ -479,15 +483,16 @@ button:hover::before {
   padding: 0.4rem 0.8rem;
   font-size: 1rem;
   border-radius: 10px;
-  border: 1px solid #9b4c3e;
+  border: 1px solid #333;
   margin-top: 1rem;
-  font-family: 'Dancing Script', cursive;
-  color: #7d4b43;
+  color: #333;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   text-align: center;
 }
 
 #modalInput input[type="text"]::placeholder {
-  color: #bba89f;
+  color: #333;
 }
 
 #modalInput .buttons {
@@ -504,15 +509,15 @@ button:hover::before {
   cursor: pointer;
   font-family: 'Dancing Script', cursive;
   font-size: 1rem;
-  box-shadow: 0 4px 8px rgba(143, 88, 78, 0.4);
+  box-shadow: 0 4px 8px rgba(72, 71, 71, 0.4);
   transition: background-color 0.3s ease;
   color: white;
-  background-color: #8f584e;
+  background-color: #9b4c3e;
   min-width: 80px;
 }
 
 #modalInput button:hover {
-  background-color: #7d3b32;
+  background-color: #553131;
 }
 
 /* ANIMACIÓN CON REBOTE SUAVE */
@@ -554,7 +559,6 @@ button:hover::before {
   color: #333;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
 Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-
   font-size: 1rem;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
   animation: bounceIn 0.5s ease-out forwards;
