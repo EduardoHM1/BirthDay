@@ -25,16 +25,73 @@
   </div>
 
 <script>
-  function confirmarAsistencia() {
-    const nombre = prompt("Ingresa tu nombre para confirmar tu asistencia:");
-    if (nombre) {
-      const url = "https://docs.google.com/forms/d/e/1FAIpQLSdHTg1PqBlGP41LB-B0L5e4eLxQ1CH-i5k_ZzwdVhyGBVTS5A/viewform?usp=pp_url&entry.941064867=" + encodeURIComponent(nombre);
-      window.location.href = url;
-    } else {
-      alert("No se ingresó ningún nombre.");
+  // Mostrar modal y enfocar input
+  function mostrarModalInput() {
+    const modal = document.getElementById('modalInput');
+    modal.style.display = 'flex';
+    const input = document.getElementById('nombreInput');
+    input.value = '';
+    input.focus();
+  }
+
+  // Ocultar modal
+  function ocultarModalInput() {
+    const modal = document.getElementById('modalInput');
+    modal.style.display = 'none';
+  }
+
+  // Enviar formulario
+  function enviarNombre() {
+    const nombre = document.getElementById('nombreInput').value.trim();
+    if (!nombre) {
+      alert('Por favor, ingresa tu nombre.');
+      return;
     }
+    const url = "https://docs.google.com/forms/d/e/1FAIpQLSdHTg1PqBlGP41LB-B0L5e4eLxQ1CH-i5k_ZzwdVhyGBVTS5A/viewform?usp=pp_url&entry.941064867=" + encodeURIComponent(nombre);
+    window.location.href = url;
+  }
+
+  // Configurar eventos de botones y cierre con ESC o clic fuera
+  document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('btnEnviar').addEventListener('click', enviarNombre);
+    document.getElementById('btnCerrar').addEventListener('click', ocultarModalInput);
+
+    // Cerrar con clic fuera del contenido
+    document.getElementById('modalInput').addEventListener('click', e => {
+      if (e.target.id === 'modalInput') {
+        ocultarModalInput();
+      }
+    });
+
+    // Cerrar con tecla ESC
+    document.addEventListener('keydown', e => {
+      if (e.key === "Escape") {
+        const modal = document.getElementById('modalInput');
+        if (modal.style.display === 'flex') {
+          ocultarModalInput();
+        }
+      }
+    });
+  });
+
+  // Función principal que abre el modal en vez del prompt
+  function confirmarAsistencia() {
+    mostrarModalInput();
   }
 </script>
+
+<!-- Modal para ingresar nombre -->
+<div id="modalInput" style="display:none;">
+  <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle" tabindex="-1">
+    <p id="modalTitle">Ingresa tu nombre para confirmar tu asistencia:</p>
+    <input type="text" id="nombreInput" placeholder="Tu nombre aquí" />
+    <div class="buttons">
+      <button id="btnEnviar">Enviar</button>
+      <button id="btnCerrar">Cancelar</button>
+    </div>
+  </div>
+</div>
+
 
 </body>
 </html>
